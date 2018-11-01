@@ -3,8 +3,8 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    question = params[:user_question]
-    if question == "are you hungry"
+    @question = params[:user_question]
+    if @question == "are you hungry"
       @answer = "always"
     else
       @answer = "google it"
