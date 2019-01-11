@@ -4,8 +4,8 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:user_question]
-    if @question == "are you hungry"
-      @answer = "always"
+    if @question == "should I hire william?"
+      @answer = "of course, what are you waiting for?"
     else
       @answer = "google it"
     end
